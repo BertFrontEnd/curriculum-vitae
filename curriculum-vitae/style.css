@@ -1,0 +1,36 @@
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+html body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  height: calc(100vh-20px);
+  padding: 20px;
+  font-size: 1.6rem;
+  background-color: #eee;
+}
+
+html .wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+html .wrapper .contact__info {
+  z-index: 1;
+  background-color: #5e6464;
+  border-radius: 40px 0 0 40px;
+  -webkit-box-shadow: 0 0 10px 5px #dddddd;
+          box-shadow: 0 0 10px 5px #dddddd;
+}
+
+html .wrapper .experience__info {
+  background-color: #f5f5f5;
+  -webkit-box-shadow: 0 0 10px 5px #dddddd;
+          box-shadow: 0 0 10px 5px #dddddd;
+}
+/*# sourceMappingURL=style.css.map */
