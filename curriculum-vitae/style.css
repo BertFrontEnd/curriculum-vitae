@@ -9,7 +9,7 @@ body {
   -ms-grid-columns: 1.25fr 2fr 0fr 0fr;
       grid-template-columns: 1.25fr 2fr 0fr 0fr;
   height: calc(100vh-20px);
-  padding: 20px;
+  padding: 20px 0;
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 1.6rem;
   background-color: #fafafa;
@@ -50,7 +50,7 @@ h3 {
   font-size: 1.6rem;
   letter-spacing: 1.5px;
   text-transform: uppercase;
-  color: #fff;
+  color: #ffffff;
 }
 
 h3::after {
@@ -60,7 +60,7 @@ h3::after {
   width: 95%;
   height: 1px;
   content: '';
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 a {
@@ -84,6 +84,7 @@ a:hover {
 }
 
 .wrapper .contact__info {
+  position: relative;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,14 +100,43 @@ a:hover {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 20px;
-  /* width: 100%; */
+  overflow: hidden;
   background-color: #5e6464;
   border-radius: 40px 0 0 40px;
   -webkit-box-shadow: 0 0 10px 5px #dddddd;
           box-shadow: 0 0 10px 5px #dddddd;
 }
 
+.wrapper .contact__info::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #ffffff25;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+
+.wrapper .contact__info::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-color: #ffffff25;
+  -webkit-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transform: rotate(-50deg);
+          transform: rotate(-50deg);
+}
+
 .wrapper .contact__info .info__photo {
+  z-index: 1;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -235,9 +265,9 @@ a:hover {
 }
 
 .wrapper .contact__info .info__self p {
-  margin: 0 0 20px 20px;
+  margin: 0 0 5px 20px;
   font-size: 1.2rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .wrapper .experience__info {
@@ -254,7 +284,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 20px 20px 20px 30px;
+  padding: 20px 30px 20px 30px;
   background-color: #f5f5f5;
   -webkit-box-shadow: 0 0 10px 5px #dddddd;
           box-shadow: 0 0 10px 5px #dddddd;
@@ -474,6 +504,7 @@ a:hover {
 .wrapper .experience__info .info__experience .skills__description,
 .wrapper .experience__info .info__skills .skills__description,
 .wrapper .experience__info .info__language .skills__description {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -484,6 +515,434 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .skills__description::before,
+.wrapper .experience__info .info__experience .skills__description::before,
+.wrapper .experience__info .info__skills .skills__description::before,
+.wrapper .experience__info .info__language .skills__description::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .skills__description ul,
+.wrapper .experience__info .info__experience .skills__description ul,
+.wrapper .experience__info .info__skills .skills__description ul,
+.wrapper .experience__info .info__language .skills__description ul {
+  width: 175px;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill,
+.wrapper .experience__info .info__experience .skills__description ul .skill,
+.wrapper .experience__info .info__skills .skills__description ul .skill,
+.wrapper .experience__info .info__language .skills__description ul .skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .name,
+.wrapper .experience__info .info__experience .skills__description ul .skill .name,
+.wrapper .experience__info .info__skills .skills__description ul .skill .name,
+.wrapper .experience__info .info__language .skills__description ul .skill .name {
+  font-size: 1.6rem;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__education .skills__description ul .skill .office,
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__education .skills__description ul .skill .figma,
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__education .skills__description ul .skill .printing,
+.wrapper .experience__info .info__education .skills__description ul .skill .html5,
+.wrapper .experience__info .info__education .skills__description ul .skill .css3,
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__education .skills__description ul .skill .sass,
+.wrapper .experience__info .info__education .skills__description ul .skill .git,
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks,
+.wrapper .experience__info .info__language .skills__description ul .skill .office,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass,
+.wrapper .experience__info .info__language .skills__description ul .skill .git,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode {
+  position: relative;
+  width: 70px;
+  height: 12px;
+  border-radius: 16px;
+  background-color: #939393;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 12px;
+  content: '';
+  border-radius: 16px;
+  background-color: #5d5d5d;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .tflex::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .tflex::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .solidworks::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .solidworks::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .office::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .office::after {
+  width: 90%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .photoshop::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .photoshop::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .figma::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .figma::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .xmind::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .xmind::after {
+  width: 85%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .printing::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .printing::after {
+  width: 95%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .html5::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .css3::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .css3::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .javascript::after {
+  width: 60%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .sass::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .git::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .git::after {
+  width: 70%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .webpack::after {
+  width: 60%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
+  width: 80%;
+}
+
+.wrapper .experience__info .info__education .language__description,
+.wrapper .experience__info .info__experience .language__description,
+.wrapper .experience__info .info__skills .language__description,
+.wrapper .experience__info .info__language .language__description {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  border-left: 1px solid #4b4b4b;
+}
+
+.wrapper .experience__info .info__education .language__description::before,
+.wrapper .experience__info .info__experience .language__description::before,
+.wrapper .experience__info .info__skills .language__description::before,
+.wrapper .experience__info .info__language .language__description::before {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 10px;
+  height: 10px;
+  content: '';
+  border-radius: 50%;
+  border: 1px solid #4b4b4b;
+  background-color: #f5f5f5;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.wrapper .experience__info .info__education .language__description ul,
+.wrapper .experience__info .info__experience .language__description ul,
+.wrapper .experience__info .info__skills .language__description ul,
+.wrapper .experience__info .info__language .language__description ul {
+  width: 175px;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level,
+.wrapper .experience__info .info__experience .language__description ul .level,
+.wrapper .experience__info .info__skills .language__description ul .level,
+.wrapper .experience__info .info__language .language__description ul .level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .lang,
+.wrapper .experience__info .info__experience .language__description ul .level .lang,
+.wrapper .experience__info .info__skills .language__description ul .level .lang,
+.wrapper .experience__info .info__language .language__description ul .level .lang {
+  font-size: 1.6rem;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian,
+.wrapper .experience__info .info__education .language__description ul .level .belarusian,
+.wrapper .experience__info .info__education .language__description ul .level .polish,
+.wrapper .experience__info .info__education .language__description ul .level .english,
+.wrapper .experience__info .info__experience .language__description ul .level .russian,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian,
+.wrapper .experience__info .info__experience .language__description ul .level .polish,
+.wrapper .experience__info .info__experience .language__description ul .level .english,
+.wrapper .experience__info .info__skills .language__description ul .level .russian,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian,
+.wrapper .experience__info .info__skills .language__description ul .level .polish,
+.wrapper .experience__info .info__skills .language__description ul .level .english,
+.wrapper .experience__info .info__language .language__description ul .level .russian,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian,
+.wrapper .experience__info .info__language .language__description ul .level .polish,
+.wrapper .experience__info .info__language .language__description ul .level .english {
+  position: relative;
+  width: 50px;
+  height: 12px;
+  border-radius: 16px;
+  background-color: #939393;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian::after,
+.wrapper .experience__info .info__education .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__education .language__description ul .level .polish::after,
+.wrapper .experience__info .info__education .language__description ul .level .english::after,
+.wrapper .experience__info .info__experience .language__description ul .level .russian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .polish::after,
+.wrapper .experience__info .info__experience .language__description ul .level .english::after,
+.wrapper .experience__info .info__skills .language__description ul .level .russian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .polish::after,
+.wrapper .experience__info .info__skills .language__description ul .level .english::after,
+.wrapper .experience__info .info__language .language__description ul .level .russian::after,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__language .language__description ul .level .polish::after,
+.wrapper .experience__info .info__language .language__description ul .level .english::after {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  height: 12px;
+  content: '';
+  border-radius: 16px;
+  background-color: #5d5d5d;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .russian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .russian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .russian::after,
+.wrapper .experience__info .info__language .language__description ul .level .russian::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__experience .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__skills .language__description ul .level .belarusian::after,
+.wrapper .experience__info .info__language .language__description ul .level .belarusian::after {
+  width: 100%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .polish::after,
+.wrapper .experience__info .info__experience .language__description ul .level .polish::after,
+.wrapper .experience__info .info__skills .language__description ul .level .polish::after,
+.wrapper .experience__info .info__language .language__description ul .level .polish::after {
+  width: 75%;
+}
+
+.wrapper .experience__info .info__education .language__description ul .level .english::after,
+.wrapper .experience__info .info__experience .language__description ul .level .english::after,
+.wrapper .experience__info .info__skills .language__description ul .level .english::after,
+.wrapper .experience__info .info__language .language__description ul .level .english::after {
   width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
