@@ -148,6 +148,10 @@ a:hover {
 .wrapper .contact__info .info__photo img {
   border-radius: 50%;
   border: 2px solid #fff;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.1), 0 10px 10px rgba(0, 0, 0, 0.1);
+  -webkit-filter: saturate(30%);
+          filter: saturate(30%);
 }
 
 .wrapper .contact__info .info__connection {
@@ -293,6 +297,7 @@ a:hover {
 .wrapper .experience__info .info__bio {
   -ms-flex-item-align: end;
       align-self: flex-end;
+  margin-bottom: 20px;
 }
 
 .wrapper .experience__info .info__education,
@@ -300,6 +305,7 @@ a:hover {
 .wrapper .experience__info .info__skills,
 .wrapper .experience__info .info__language {
   width: 100%;
+  margin-bottom: 20px;
   color: #4b4b4b;
 }
 
@@ -944,5 +950,9 @@ a:hover {
 .wrapper .experience__info .info__skills .language__description ul .level .english::after,
 .wrapper .experience__info .info__language .language__description ul .level .english::after {
   width: 50%;
+}
+
+.wrapper .experience__info .info__language {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
