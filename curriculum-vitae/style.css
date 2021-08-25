@@ -406,6 +406,9 @@ a:hover {
   margin-bottom: 10px;
   padding-left: 20px;
   border-left: 1px solid #4b4b4b;
+  /* .faculty {
+            font-style: italic;
+          } */
 }
 
 .wrapper .experience__info .info__education .education__description ul::before,
@@ -458,6 +461,9 @@ a:hover {
   margin-bottom: 10px;
   padding-left: 20px;
   border-left: 1px solid #4b4b4b;
+  /* .position {
+            font-style: italic;
+          } */
 }
 
 .wrapper .experience__info .info__education .experience__description ul::before,
