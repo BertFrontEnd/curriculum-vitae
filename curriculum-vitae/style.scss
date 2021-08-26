@@ -82,7 +82,7 @@ a {
     position: relative;
     z-index: 1;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     padding: 20px;
@@ -152,7 +152,6 @@ a {
           width: 28px;
           height: 28px;
           content: '';
-          /* background-color: #fff; */
           background-repeat: no-repeat;
           background-size: contain;
           transform: translateY(-50%);
@@ -214,13 +213,19 @@ a {
       .reference {
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
+        margin-left: 20px;
 
         li {
-          line-height: 25px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          /* line-height: 25px; */
+          margin-bottom: 10px;
 
           a {
+            margin-right: 5px;
             &:hover {
               .icon-link {
                 fill: #fff;
@@ -236,6 +241,21 @@ a {
             fill: #cccccc;
             transition: all 0.25s;
           }
+
+          span {
+            margin: 0 2px;
+            padding: 5px;
+            font-size: 0.8rem;
+            line-height: 5px;
+            color: #4b4b4b;
+            border-radius: 4px;
+            background-color: #ffffff;
+            pointer-events: none;
+          }
+        }
+
+        li:last-child {
+          margin-bottom: 0;
         }
       }
     }
@@ -262,7 +282,7 @@ a {
 
     .info__bio {
       align-self: flex-end;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .info__education,
@@ -350,9 +370,9 @@ a {
             font-size: 1.2rem;
           }
 
-          /* .faculty {
+          .faculty {
             font-style: italic;
-          } */
+          }
 
           .institution {
             font-size: 1.6rem;
@@ -391,9 +411,24 @@ a {
             }
           }
 
-          /* .position {
+          p:not(:first-child) {
             font-style: italic;
-          } */
+          }
+
+          p:first-child {
+            position: relative;
+            display: inline-block;
+
+            &::after {
+              position: absolute;
+              left: 0%;
+              bottom: 0;
+              width: 100%;
+              height: 1px;
+              content: '';
+              background-color: #4b4b4b;
+            }
+          }
 
           .place {
             font-size: 1.6rem;
@@ -445,9 +480,9 @@ a {
             .figma,
             .xmind,
             .printing,
+            .javascript,
             .html5,
             .css3,
-            .javascript,
             .sass,
             .git,
             .webpack,
@@ -511,21 +546,21 @@ a {
               }
             }
 
-            .html5 {
+            .javascript {
               &::after {
                 width: 70%;
+              }
+            }
+
+            .html5 {
+              &::after {
+                width: 75%;
               }
             }
 
             .css3 {
               &::after {
                 width: 80%;
-              }
-            }
-
-            .javascript {
-              &::after {
-                width: 70%;
               }
             }
 
