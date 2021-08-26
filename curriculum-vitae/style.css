@@ -779,7 +779,7 @@ a:hover {
 .wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .javascript::after {
-  width: 60%;
+  width: 70%;
 }
 
 .wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
