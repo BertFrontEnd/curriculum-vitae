@@ -257,7 +257,10 @@ a:hover {
           align-items: center;
   /* line-height: 25px; */
   margin-bottom: 10px;
+<<<<<<< HEAD
   /* text-align: center; */
+=======
+>>>>>>> 2e2f7b35202ba943b9c472da4c6ac0685098041f
 }
 
 .wrapper .contact__info .info__reference .reference li a {
@@ -327,7 +330,7 @@ a:hover {
 .wrapper .experience__info .info__bio {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .wrapper .experience__info .info__education,
@@ -473,6 +476,13 @@ a:hover {
   font-style: italic;
 }
 
+.wrapper .experience__info .info__education .education__description ul .faculty,
+.wrapper .experience__info .info__experience .education__description ul .faculty,
+.wrapper .experience__info .info__skills .education__description ul .faculty,
+.wrapper .experience__info .info__language .education__description ul .faculty {
+  font-style: italic;
+}
+
 .wrapper .experience__info .info__education .education__description ul .institution,
 .wrapper .experience__info .info__experience .education__description ul .institution,
 .wrapper .experience__info .info__skills .education__description ul .institution,
@@ -495,6 +505,7 @@ a:hover {
   margin-bottom: 10px;
   padding-left: 20px;
   border-left: 1px solid #4b4b4b;
+<<<<<<< HEAD
   /* p:first-child {
             font-style: italic;
           } */
@@ -512,6 +523,8 @@ a:hover {
               background-color: #4b4b4b;
             }
           } */
+=======
+>>>>>>> 2e2f7b35202ba943b9c472da4c6ac0685098041f
 }
 
 .wrapper .experience__info .info__education .experience__description ul::before,
@@ -550,6 +563,34 @@ a:hover {
 .wrapper .experience__info .info__skills .experience__description ul .position,
 .wrapper .experience__info .info__language .experience__description ul .position {
   font-style: italic;
+}
+
+.wrapper .experience__info .info__education .experience__description ul p:not(:first-child),
+.wrapper .experience__info .info__experience .experience__description ul p:not(:first-child),
+.wrapper .experience__info .info__skills .experience__description ul p:not(:first-child),
+.wrapper .experience__info .info__language .experience__description ul p:not(:first-child) {
+  font-style: italic;
+}
+
+.wrapper .experience__info .info__education .experience__description ul p:first-child,
+.wrapper .experience__info .info__experience .experience__description ul p:first-child,
+.wrapper .experience__info .info__skills .experience__description ul p:first-child,
+.wrapper .experience__info .info__language .experience__description ul p:first-child {
+  position: relative;
+  display: inline-block;
+}
+
+.wrapper .experience__info .info__education .experience__description ul p:first-child::after,
+.wrapper .experience__info .info__experience .experience__description ul p:first-child::after,
+.wrapper .experience__info .info__skills .experience__description ul p:first-child::after,
+.wrapper .experience__info .info__language .experience__description ul p:first-child::after {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  content: '';
+  background-color: #4b4b4b;
 }
 
 .wrapper .experience__info .info__education .experience__description ul .place,

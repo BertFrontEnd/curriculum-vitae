@@ -221,9 +221,7 @@ a {
           display: flex;
           justify-content: center;
           align-items: center;
-          /* line-height: 25px; */
           margin-bottom: 10px;
-          /* text-align: center; */
 
           a {
             margin-right: 5px;
@@ -283,7 +281,7 @@ a {
 
     .info__bio {
       align-self: flex-end;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
     }
 
     .info__education,
@@ -416,40 +414,10 @@ a {
             font-style: italic;
           }
 
-          /* p:first-child {
-            font-style: italic;
-          } */
-
-          /* p:first-child {
-            position: relative;
-            display: inline-block;
-
-            &::after {
-              position: absolute;
-              left: 0%;
-              bottom: 0;
-              width: 100%;
-              height: 1px;
-              content: '';
-              background-color: #4b4b4b;
-            }
-          } */
-
           .place {
             display: inline-block;
             position: relative;
-            /* margin-bottom: 5px; */
             font-size: 1.4rem;
-
-            /* &::after {
-              position: absolute;
-              left: 0%;
-              bottom: 0;
-              width: 100%;
-              height: 1px;
-              content: '';
-              background-color: #4b4b4b;
-            } */
           }
         }
       }
