@@ -466,6 +466,7 @@ a {
             .office,
             .photoshop,
             .figma,
+            .adobexd,
             .xmind,
             .printing,
             .javascript,
@@ -519,6 +520,12 @@ a {
             .figma {
               &::after {
                 width: 80%;
+              }
+            }
+
+            .adobexd {
+              &::after {
+                width: 60%;
               }
             }
 
