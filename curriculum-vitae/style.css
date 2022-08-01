@@ -9,10 +9,8 @@ body {
   -ms-grid-columns: 1.25fr 2fr 0fr 0fr;
       grid-template-columns: 1.25fr 2fr 0fr 0fr;
   height: calc(100vh-20px);
-  /* padding: 20px 0; */
   font-family: 'Montserrat Regular', sans-serif;
   font-size: 1.6rem;
-  /* background-color: #fafafa; */
 }
 
 h1 {
@@ -103,7 +101,6 @@ a:hover {
   overflow: hidden;
   background-color: #5e6464;
   border-radius: 40px 0 0 40px;
-  /* box-shadow: 0 0 10px 5px #dddddd; */
 }
 
 .wrapper .contact__info::before {
@@ -317,7 +314,6 @@ a:hover {
           flex-direction: column;
   padding: 20px 20px 20px 20px;
   background-color: #f5f5f5;
-  /* box-shadow: 0 0 10px 5px #dddddd; */
 }
 
 .wrapper .experience__info .info__bio {
@@ -519,9 +515,6 @@ a:hover {
 .wrapper .experience__info .info__language .experience__description ul .year,
 .wrapper .experience__info .info__language .experience__description ul .position {
   font-size: 1rem;
-  /* p {
-              margin-bottom: 5px;
-            } */
 }
 
 .wrapper .experience__info .info__education .experience__description ul .position,
@@ -624,11 +617,14 @@ a:hover {
 .wrapper .experience__info .info__education .skills__description ul .skill .printing,
 .wrapper .experience__info .info__education .skills__description ul .skill .javascript,
 .wrapper .experience__info .info__education .skills__description ul .skill .html5,
+.wrapper .experience__info .info__education .skills__description ul .skill .pug,
 .wrapper .experience__info .info__education .skills__description ul .skill .css3,
 .wrapper .experience__info .info__education .skills__description ul .skill .sass,
 .wrapper .experience__info .info__education .skills__description ul .skill .git,
 .wrapper .experience__info .info__education .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__education .skills__description ul .skill .gulp,
 .wrapper .experience__info .info__education .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__education .skills__description ul .skill .npm,
 .wrapper .experience__info .info__experience .skills__description ul .skill .tflex,
 .wrapper .experience__info .info__experience .skills__description ul .skill .solidworks,
 .wrapper .experience__info .info__experience .skills__description ul .skill .office,
@@ -639,11 +635,14 @@ a:hover {
 .wrapper .experience__info .info__experience .skills__description ul .skill .printing,
 .wrapper .experience__info .info__experience .skills__description ul .skill .javascript,
 .wrapper .experience__info .info__experience .skills__description ul .skill .html5,
+.wrapper .experience__info .info__experience .skills__description ul .skill .pug,
 .wrapper .experience__info .info__experience .skills__description ul .skill .css3,
 .wrapper .experience__info .info__experience .skills__description ul .skill .sass,
 .wrapper .experience__info .info__experience .skills__description ul .skill .git,
 .wrapper .experience__info .info__experience .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__experience .skills__description ul .skill .gulp,
 .wrapper .experience__info .info__experience .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__experience .skills__description ul .skill .npm,
 .wrapper .experience__info .info__skills .skills__description ul .skill .tflex,
 .wrapper .experience__info .info__skills .skills__description ul .skill .solidworks,
 .wrapper .experience__info .info__skills .skills__description ul .skill .office,
@@ -654,11 +653,14 @@ a:hover {
 .wrapper .experience__info .info__skills .skills__description ul .skill .printing,
 .wrapper .experience__info .info__skills .skills__description ul .skill .javascript,
 .wrapper .experience__info .info__skills .skills__description ul .skill .html5,
+.wrapper .experience__info .info__skills .skills__description ul .skill .pug,
 .wrapper .experience__info .info__skills .skills__description ul .skill .css3,
 .wrapper .experience__info .info__skills .skills__description ul .skill .sass,
 .wrapper .experience__info .info__skills .skills__description ul .skill .git,
 .wrapper .experience__info .info__skills .skills__description ul .skill .webpack,
+.wrapper .experience__info .info__skills .skills__description ul .skill .gulp,
 .wrapper .experience__info .info__skills .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__skills .skills__description ul .skill .npm,
 .wrapper .experience__info .info__language .skills__description ul .skill .tflex,
 .wrapper .experience__info .info__language .skills__description ul .skill .solidworks,
 .wrapper .experience__info .info__language .skills__description ul .skill .office,
@@ -669,11 +671,14 @@ a:hover {
 .wrapper .experience__info .info__language .skills__description ul .skill .printing,
 .wrapper .experience__info .info__language .skills__description ul .skill .javascript,
 .wrapper .experience__info .info__language .skills__description ul .skill .html5,
+.wrapper .experience__info .info__language .skills__description ul .skill .pug,
 .wrapper .experience__info .info__language .skills__description ul .skill .css3,
 .wrapper .experience__info .info__language .skills__description ul .skill .sass,
 .wrapper .experience__info .info__language .skills__description ul .skill .git,
 .wrapper .experience__info .info__language .skills__description ul .skill .webpack,
-.wrapper .experience__info .info__language .skills__description ul .skill .vscode {
+.wrapper .experience__info .info__language .skills__description ul .skill .gulp,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode,
+.wrapper .experience__info .info__language .skills__description ul .skill .npm {
   position: relative;
   width: 60px;
   height: 10px;
@@ -691,11 +696,14 @@ a:hover {
 .wrapper .experience__info .info__education .skills__description ul .skill .printing::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .pug::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .css3::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .git::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .gulp::after,
 .wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__education .skills__description ul .skill .npm::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .tflex::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .solidworks::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .office::after,
@@ -706,11 +714,14 @@ a:hover {
 .wrapper .experience__info .info__experience .skills__description ul .skill .printing::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .pug::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .css3::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .git::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .gulp::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .npm::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .tflex::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .solidworks::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .office::after,
@@ -721,11 +732,14 @@ a:hover {
 .wrapper .experience__info .info__skills .skills__description ul .skill .printing::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .pug::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .css3::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .git::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .webpack::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .gulp::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .npm::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .tflex::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .solidworks::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .office::after,
@@ -736,11 +750,14 @@ a:hover {
 .wrapper .experience__info .info__language .skills__description ul .skill .printing::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .javascript::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .html5::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .pug::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .css3::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .git::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .webpack::after,
-.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
+.wrapper .experience__info .info__language .skills__description ul .skill .gulp::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .vscode::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .npm::after {
   position: absolute;
   top: 0;
   left: 0%;
@@ -827,6 +844,13 @@ a:hover {
   width: 80%;
 }
 
+.wrapper .experience__info .info__education .skills__description ul .skill .pug::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .pug::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .pug::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .pug::after {
+  width: 85%;
+}
+
 .wrapper .experience__info .info__education .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .sass::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .sass::after,
@@ -848,11 +872,25 @@ a:hover {
   width: 60%;
 }
 
+.wrapper .experience__info .info__education .skills__description ul .skill .gulp::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .gulp::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .gulp::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .gulp::after {
+  width: 70%;
+}
+
 .wrapper .experience__info .info__education .skills__description ul .skill .vscode::after,
 .wrapper .experience__info .info__experience .skills__description ul .skill .vscode::after,
 .wrapper .experience__info .info__skills .skills__description ul .skill .vscode::after,
 .wrapper .experience__info .info__language .skills__description ul .skill .vscode::after {
   width: 80%;
+}
+
+.wrapper .experience__info .info__education .skills__description ul .skill .npm::after,
+.wrapper .experience__info .info__experience .skills__description ul .skill .npm::after,
+.wrapper .experience__info .info__skills .skills__description ul .skill .npm::after,
+.wrapper .experience__info .info__language .skills__description ul .skill .npm::after {
+  width: 65%;
 }
 
 .wrapper .experience__info .info__education .skills__description ul:last-child,
